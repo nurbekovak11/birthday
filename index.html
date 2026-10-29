@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Akylai’s birthday party</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700&family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F8EAE6; --text:#4A0E1E; --card:#6B1530; --card-text:#F8EAE6;
+  --accent:#E3B04B; --rose:#F0A6B3; --on-accent:#4A0E1E;
+  color-scheme: light;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){ --bg:#2A0711; --text:#F8EAE6; --card:#5A1228; --card-text:#F8EAE6; color-scheme: dark; }
+}
+:root[data-theme="dark"]{ --bg:#2A0711; --text:#F8EAE6; --card:#5A1228; --card-text:#F8EAE6; color-scheme: dark; }
+html{ scroll-padding-top:env(safe-area-inset-top,0px); }
+*{ box-sizing:border-box; }
+body{ margin:0; background:var(--bg); color:var(--text); font-family:'Manrope',system-ui,sans-serif; line-height:1.5; }
+main{ max-width:560px; margin:0 auto; padding:28px 18px 40px; display:flex; flex-direction:column; align-items:center; gap:22px; text-align:center; }
+.pill{ font-size:12px; font-weight:800; letter-spacing:.22em; background:var(--accent); color:var(--on-accent); padding:8px 16px; border-radius:999px; }
+h1{ margin:0; font-family:'Unbounded',system-ui,sans-serif; font-weight:700; font-size:clamp(28px,8vw,40px); line-height:1.15; }
+h1 span{ display:block; font-size:.5em; font-weight:500; margin-top:10px; }
+.lead{ margin:0; font-size:19px; font-weight:600; max-width:440px; }
+svg{ width:100%; height:auto; max-width:520px; }
+.card{ width:100%; background:var(--card); color:var(--card-text); border-radius:22px; padding:22px 24px; display:flex; flex-direction:column; gap:16px; text-align:left; }
+.row{ display:flex; gap:16px; align-items:baseline; }
+.row b{ flex:0 0 84px; font-size:12px; font-weight:800; letter-spacing:.16em; color:var(--accent); }
+.row span{ font-size:19px; font-weight:600; }
+.rsvp{ display:flex; gap:12px; flex-wrap:wrap; justify-content:center; }
+button{ min-height:48px; padding:0 24px; border-radius:999px; font:800 16px 'Manrope',system-ui,sans-serif; cursor:pointer; border:2px solid var(--text); background:transparent; color:var(--text); }
+button.yes{ background:var(--accent); border-color:var(--accent); color:var(--on-accent); }
+button:focus-visible{ outline:3px solid var(--rose); outline-offset:3px; }
+#msg{ min-height:30px; margin:0; font-weight:800; font-size:18px; }
+small{ opacity:.8; font-size:15px; }
+</style>
+</head>
+<body>
+<main>
+  <div class="pill">YOU’RE INVITED</div>
+  <h1>Akylai’s birthday party<span>at the Escape room</span></h1>
+  <p class="lead">Every locked door is just a puzzle waiting for you. Stay curious, be brave, and celebrate big.</p>
+
+  <svg viewBox="0 0 520 220" fill="none" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Two friends in an escape room: one lights up a code on the wall, the other carries a key toward a locked door">
+    <rect width="520" height="220" rx="24" fill="#7A1B38"/>
+    <rect y="190" width="520" height="30" fill="#3A0A18"/>
+    <rect x="18" y="38" width="108" height="92" rx="10" fill="#4A0E1E" stroke="#E3B04B" stroke-width="2.5"/>
+    <circle cx="46" cy="66" r="9" stroke="#F0A6B3" stroke-width="3"/>
+    <path d="M72 74 L82 56 L92 74 Z" stroke="#E3B04B" stroke-width="3"/>
+    <rect x="100" y="57" width="16" height="16" rx="2" stroke="#F0A6B3" stroke-width="3"/>
+    <path d="M36 108 H108" stroke="#F8EAE6" stroke-width="3" stroke-dasharray="2 8"/>
+    <polygon points="104,100 40,68 52,134" fill="#E3B04B" opacity=".28"/>
+    <path d="M392 190 V104 A50 50 0 0 1 492 104 V190 Z" fill="#4A0E1E" stroke="#E3B04B" stroke-width="4"/>
+    <rect x="428" y="132" width="28" height="24" rx="5" fill="#E3B04B"/>
+    <path d="M434 132 V124 a8 8 0 0 1 16 0 V132" stroke="#E3B04B" stroke-width="4"/>
+    <circle cx="442" cy="142" r="3" fill="#4A0E1E"/>
+    <ellipse cx="165" cy="192" rx="30" ry="5" fill="#2A0711"/><ellipse cx="300" cy="192" rx="30" ry="5" fill="#2A0711"/>
+    <line x1="149" y1="124" x2="126" y2="112" stroke="#E3B04B" stroke-width="10"/>
+    <line x1="181" y1="124" x2="190" y2="150" stroke="#E3B04B" stroke-width="10"/>
+    <rect x="149" y="160" width="14" height="28" rx="5" fill="#2A0711"/><rect x="167" y="160" width="14" height="28" rx="5" fill="#2A0711"/>
+    <rect x="147" y="114" width="36" height="50" rx="14" fill="#E3B04B"/>
+    <circle cx="165" cy="94" r="17" fill="#C98B63"/>
+    <path d="M148 92 a17 15 0 0 1 34 0 q-17 -9 -34 0 Z" fill="#2B1B14"/>
+    <circle cx="159" cy="97" r="1.8" fill="#4A0E1E"/><circle cx="171" cy="97" r="1.8" fill="#4A0E1E"/>
+    <path d="M160 103 q5 4 10 0" stroke="#4A0E1E" stroke-width="2"/>
+    <circle cx="123" cy="111" r="5.5" fill="#C98B63"/>
+    <line x1="119" y1="109" x2="106" y2="103" stroke="#F8EAE6" stroke-width="8"/>
+    <line x1="284" y1="124" x2="276" y2="150" stroke="#F0A6B3" stroke-width="10"/>
+    <line x1="316" y1="124" x2="346" y2="98" stroke="#F0A6B3" stroke-width="10"/>
+    <rect x="284" y="160" width="14" height="28" rx="5" fill="#2A0711"/><rect x="302" y="160" width="14" height="28" rx="5" fill="#2A0711"/>
+    <rect x="282" y="114" width="36" height="50" rx="14" fill="#F0A6B3"/>
+    <circle cx="322" cy="100" r="7" fill="#5A2410"/>
+    <circle cx="300" cy="94" r="17" fill="#F2C4A0"/>
+    <ellipse cx="300" cy="84" rx="19" ry="12" fill="#5A2410"/>
+    <circle cx="294" cy="97" r="1.8" fill="#4A0E1E"/><circle cx="306" cy="97" r="1.8" fill="#4A0E1E"/>
+    <path d="M295 103 q5 4 10 0" stroke="#4A0E1E" stroke-width="2"/>
+    <circle cx="349" cy="96" r="5.5" fill="#F2C4A0"/>
+    <circle cx="359" cy="84" r="7" stroke="#E3B04B" stroke-width="3.5"/>
+    <path d="M364 79 L378 66 M372 72 L376 76 M377 67 L381 71" stroke="#E3B04B" stroke-width="3.5"/>
+    <path d="M370 52 l3 7 l7 3 l-7 3 l-3 7 l-3 -7 l-7 -3 l7 -3 Z" fill="#E3B04B"/>
+    <circle cx="338" cy="58" r="2.5" fill="#F0A6B3"/><circle cx="238" cy="60" r="2.5" fill="#E3B04B"/>
+  </svg>
+
+  <div class="card">
+    <div class="row"><b>EVENT</b><span>Akylai’s birthday party</span></div>
+    <div class="row"><b>MEET AT</b><span>Our home</span></div>
+    <div class="row"><b>WHEN</b><span>7:30pm</span></div>
+    <div class="row"><b>THEN</b><span>Escape room</span></div>
+  </div>
+
+  <div class="rsvp">
+    <button class="yes" type="button" data-answer="yes">I’ll be there!</button>
+    <button type="button" data-answer="no">Can’t make it</button>
+  </div>
+  <p id="msg" role="status" aria-live="polite"></p>
+  <small>Believe in yourself. You already have the key.</small>
+</main>
+<script>
+(function(){
+  var msg=document.getElementById('msg');
+  var text={yes:'Amazing! Can’t wait to see you there!',no:'You’ll be missed! Next time for sure.'};
+  document.querySelectorAll('button[data-answer]').forEach(function(b){
+    b.addEventListener('click',function(){ msg.textContent=text[b.getAttribute('data-answer')]; });
+  });
+})();
+</script>
+</body>
+</html>
